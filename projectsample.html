@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume/CV Builder</title>
+    <link rel="stylesheet" href="projectsample.css">
+</head>
+
+<body>
+    <form method="post" action="db.php">
+
+        <div class="resume" id="resume">
+            <section id="print">
+                <div class="head">
+                    <div class="main">
+                        <form action="projectsample.css" method="get">
+                            <label
+                                for="name">Name</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input type="text" name="name"><br><br>
+                            <label for="job">Job Profile</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input type="text" name="job"><br><br>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone"><br><br>
+                            <label
+                                for="email">e-mail</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input type="email" name="email"><br><br>
+                            <label for="add">Address</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input type="text" name="add"><br><br>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="mainbody">
+                    <div class="leftside">
+                        <span class="title">MY SKILLS</span><br><br>
+                        <div>
+                            <div class="skill"><span><input type="checkbox" name="skills"
+                                        class="input-checkbox"></span><span><label for="skill"></label><input
+                                        type="text" name="skills"><i class="fas fa-chevron-circle-right"></i></span> <span
+                                    contenteditable="true"></span></div>
+                            <div name="skills" id="skills"></div><label
+                                for="skills"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br><br>
+                            <button id="skilladd" type="button" class="btn btn-success" onclick="addskill()"><i
+                                    class="fas fa-plus-circle"></i> Add Skill</button>
+                            <button id="skillrem" type="button" class="btn btn-danger" onclick="remskill(event)"><i
+                                    class="fas fa-minus-circle"></i> Delete Skill</button>
+                        </div>
+                        <br><br><span class="title">LANGUAGES</span><br><br>
+                        <div>
+                            <div class="language"><span><input type="checkbox" class="input-checkbox"></span><span
+                                    contenteditable="true"></span><span contenteditable="true"><label
+                                        for="languages"></label><input type="text" name="languages"></span></div>
+                            <div id="languages"></div>
+                            <button id="langadd" type="button" class="btn btn-success" onclick="addLang()"><i
+                                    class="fas fa-plus-circle"></i> Add</button>
+
+                            <button id="langrem" type="button" class="btn btn-danger" onclick="remLang(event)"><i
+                                    class="fas fa-minus-circle"></i> Delete</button>
+                        </div>
+                        <br><br><span class="title">ACHIEVEMENTS</span><br><br>
+                        <div>
+                            <div class="achieve"><span><input type="checkbox" class="input-checkbox"></span><span
+                                    contenteditable="true"><label for="achievement"></label><input type="text"
+                                        name="achievement"></span></div>
+                            <div id="achievement"></div>
+                            <button id="achadd" type="button" class="btn btn-success" onclick="addAch()"><i
+                                    class="fas fa-plus-circle"></i> Add</button>
+
+                            <button id="achrem" type="button" class="btn btn-danger" onclick="remAch(event)"
+                                style="margin-top: 0;"><i class="fas fa-minus-circle"></i> Delete</button>
+                        </div>
+                        <br><br><span class="title">INTERESTS</span><br><br>
+                        <div>
+                            <div class="achieve"><span><input type="checkbox" class="input-checkbox"></span><span
+                                    contenteditable="true"><label for="interest"></label><input type="text"
+                                        name="interest"></span></div>
+                            <div id="interest"></div>
+                            <button id="Intadd" type="button" class="btn btn-success" onclick="addInt()"><i
+                                    class="fas fa-plus-circle"></i> Add</button>
+
+                            <button id="Intrem" type="button" class="btn btn-danger" onclick="remInt(event)"><i
+                                    class="fas fa-minus-circle"></i> Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="border"></div>
+                    <div class="rightside">
+
+                        <br><br><span class="title">EDUCATION</span><br><br>
+                        <div>
+                            <div id="education">
+                                <h4>YOUR DEGREE</h4>
+                                <h6>Institue name-Passing Year</h6>
+                                <div class="edublock">
+                                    <span><input type="checkbox" class="input-checkbox"></span>
+                                    <span class="education-head" contenteditable="true"></span>
+                                    <div><span contenteditable="true"><label for="education"></label><input type="text"
+                                                name="education"></span><span contenteditable="true"></span></div>
+                                </div>
+                            </div>
+
+                            <button id="eduadd" type="button" class="btn btn-success" onclick="addedu()"><i
+                                    class="fas fa-plus-circle"></i> Add</button>
+
+                            <button id="edurem" type="button" class="btn btn-danger" onclick="remedu(event)"><i
+                                    class="fas fa-minus-circle"></i> Delete</button>
+                        </div>
+                        <br><br>
+
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+
+
+                    </div>
+                </div>
+
+        </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+<script src="projectsample.js"></script>
+
+
+</html>
