@@ -34,9 +34,9 @@
                     <div class="leftside">
                         <span class="title">MY SKILLS</span><br><br>
                         <div>
-                            <div class="skill"><span><input type="checkbox" name="skills"
+                            <div class="skill"><span><input type="checkbox" name="skill"
                                         class="input-checkbox"></span><span><label for="skill"></label><input
-                                        type="text" name="skills"><i class="fas fa-chevron-circle-right"></i></span> <span
+                                        type="text" name="skills[]"><i class="fas fa-chevron-circle-right"></i></span> <span
                                     contenteditable="true"></span></div>
                             <div name="skills" id="skills"></div><label
                                 for="skills"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br><br>
@@ -49,7 +49,7 @@
                         <div>
                             <div class="language"><span><input type="checkbox" class="input-checkbox"></span><span
                                     contenteditable="true"></span><span contenteditable="true"><label
-                                        for="languages"></label><input type="text" name="languages"></span></div>
+                                        for="languages"></label><input type="text" name="languages[]"></span></div>
                             <div id="languages"></div>
                             <button id="langadd" type="button" class="btn btn-success" onclick="addLang()"><i
                                     class="fas fa-plus-circle"></i> Add</button>
@@ -61,7 +61,7 @@
                         <div>
                             <div class="achieve"><span><input type="checkbox" class="input-checkbox"></span><span
                                     contenteditable="true"><label for="achievement"></label><input type="text"
-                                        name="achievement"></span></div>
+                                        name="achievement[]"></span></div>
                             <div id="achievement"></div>
                             <button id="achadd" type="button" class="btn btn-success" onclick="addAch()"><i
                                     class="fas fa-plus-circle"></i> Add</button>
@@ -73,7 +73,7 @@
                         <div>
                             <div class="achieve"><span><input type="checkbox" class="input-checkbox"></span><span
                                     contenteditable="true"><label for="interest"></label><input type="text"
-                                        name="interest"></span></div>
+                                        name="interest[]"></span></div>
                             <div id="interest"></div>
                             <button id="Intadd" type="button" class="btn btn-success" onclick="addInt()"><i
                                     class="fas fa-plus-circle"></i> Add</button>
@@ -95,7 +95,7 @@
                                     <span><input type="checkbox" class="input-checkbox"></span>
                                     <span class="education-head" contenteditable="true"></span>
                                     <div><span contenteditable="true"><label for="education"></label><input type="text"
-                                                name="education"></span><span contenteditable="true"></span></div>
+                                                name="education[]"></span><span contenteditable="true"></span></div>
                                 </div>
                             </div>
 
@@ -107,8 +107,8 @@
                         </div>
                         <br><br>
 
-                        <input type="submit" value="submit">
-                        <input type="reset" value="reset">
+                        <input type="submit" name="b1" value="submit">
+                        <input type="reset" name="b2" value="reset">
 
 
                     </div>

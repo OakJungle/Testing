@@ -3,7 +3,7 @@
 function addedu() {
   const head = document.createElement('div');
   document.getElementById("education").appendChild(head);
-  head.innerHTML = ('<div class="edublock"><span><input type="checkbox" class="input-checkbox"></span><span class="education-head" contenteditable="true"></span><div ><span contenteditable="true"></span><span contenteditable="true"><input type="text"></span></div></div>');
+  head.innerHTML = ('<div class="edublock"><span><input type="checkbox" class="input-checkbox"></span><span class="education-head" contenteditable="true"></span><div ><span contenteditable="true"></span><span contenteditable="true"><input name="education[]" type="text"></span></div></div>');
   saveresume();
 }
 function remedu(event) {
@@ -31,7 +31,7 @@ function remedu(event) {
 function addskill() {
   const head = document.createElement('div');
   document.getElementById("skills").appendChild(head);
-  head.innerHTML = ('<div class="skill"><span><input type="checkbox" class="input-checkbox"></span><span><input type="text"><i class="fas fa-chevron-circle-right"></i></span>   <span contenteditable="true"></span></div>');
+  head.innerHTML = ('<div class="skill"><span><input type="checkbox" class="input-checkbox"></span><span><input name="skills[]" type="text"><i class="fas fa-chevron-circle-right"></i></span>   <span contenteditable="true"></span></div>');
   saveresume();
 }
 
@@ -59,7 +59,7 @@ function remskill(event) {
 function addLang() {
   const head = document.createElement('div');
   document.getElementById("languages").appendChild(head);
-  head.innerHTML = ('<div class="language"><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true"></span><span contenteditable="true"><input type="text"></span></div>');
+  head.innerHTML = ('<div class="language"><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true"></span><span contenteditable="true"><input name="languages[]" type="text"></span></div>');
   saveresume();
 }
 function remLang(event) {
@@ -86,7 +86,7 @@ function remLang(event) {
 function addAch() {
   const head = document.createElement('div');
   document.getElementById("achievement").appendChild(head);
-  head.innerHTML = ('<div class="achieve" ><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true"><input type="text"></span></div>');
+  head.innerHTML = ('<div class="achieve" ><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true"><input name="achievement[]" type="text"></span></div>');
   saveresume();
 }
 function remAch(event) {
@@ -113,7 +113,7 @@ function remAch(event) {
 function addInt() {
   const head = document.createElement('div');
   document.getElementById("interest").appendChild(head);
-  head.innerHTML = ('<div class="achieve" ><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true"><input type="text"></span></div>');
+  head.innerHTML = ('<div class="achieve" ><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true"><input name="interest[]" type="text"></span></div>');
   saveresume();
 }
 function remInt(event) {
